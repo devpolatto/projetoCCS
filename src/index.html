@@ -4,12 +4,13 @@
 <head>
     <meta charset="utf-8">
     <title>Menu Off-Canvas</title>
-    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.11.3.min.js"></script>
 
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.11.3.min.js"></script>
     <link rel="stylesheet" href="./css/skills.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- font-awesome -->
-    <link rel="stylesheet" href="../node_modules/font-awesome/css/font-awesome.css">
+    <!--<link rel="stylesheet" href="../node_modules/font-awesome/css/font-awesome.css">-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 </head>
 
 <body>
@@ -17,11 +18,18 @@
     <article id="wrapper">
         <section id="main">
             <nav id="nav">
-                <a href="#" class="toggle-nav btn-close">x</a>
-                <h2>Menu Principal</h2>
+                <a href="#" class="toggle-nav btn-close ml-auto mr-auto mt-3">exit</a>
+                <ul>
+                    <li><a href="#"><i class="fas fa-home"></i>Home</a></li>
+                    <li><a href="#"><i class="fas fa-building"></i>Empresa</a></li>
+                    <li><a href="#"><i class="fas fa-utensils"></i>Serviços</a></li>
+                    <li><a href="#"><i class="fas fa-tasks"></i>gestão</a></li>
+                    <li><a href="#"><i class="fas fa-archive"></i>política de qualidade</a></li>
+                    <li><a href="#"><i class="fas fa-phone"></i>contato</a></li>
+                  </ul> 
             </nav>
             <section id="content">
-                <a href="#" class="toggle-nav btn-nav">Menu</a>
+                <a href="#" class="toggle-nav btn-nav mt-3 fixed-top"><i class="fas fa-bars fa-2x"></i></a>
             </section>
         </section>
     </article>
