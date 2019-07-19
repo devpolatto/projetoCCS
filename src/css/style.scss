@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css?family=Cinzel&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+#menu .navbar {
+    background-color: rgb(255, 255, 255);
+}
+
+#menu .menu-collapse{
+    padding:0 60px 10px 60px;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+#menu .menu-collapse ul {
+    height: 100px;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+
+#menu .menu-collapse ul li{
+    list-style: none;
+}
+
+#menu .menu-collapse ul a{
+    text-transform: uppercase;
+    font-size: 1.2em;
+    text-decoration: none;
+    color:#fff;
+}
+
+
+#menu .menu-collapse ul a:hover{
+    color: #fff;
+}
+
+@media (max-width: 850px) {
+     #menu .menu-collapse ul{
+      display: block;
+      height: 100%;
+     };
+};
+
+@media (max-width: 850px) {
+    #menu .collapse .nav-item .nav-link{
+        
+    }
+}
+
+
+#header{
+    height: 200px;
+}
+
+#header .carousel-inner .carousel-item img{
+    height: 500px;
+}
+
+@media (max-width: 840px) {
+    #header .carousel-inner .carousel-item img{
+        height: 300px;
+    }
+}
+
+.mynav ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .mynav li:not(:last-child) {
+    margin-right: 20px;
+  }
+  
+  .mynav a {
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding: 7px 15px;
+  }
+  
+  .target {
+    position: absolute;
+    border-bottom: 4px solid transparent;
+    z-index: -1;
+    transform: translateX(-60px);
+  }
+  
+  .mynav a, .target {
+    transition: all .35s ease-in-out;
+  }
+
+
+/* end content-header*/
+
+@import "../../node_modules/bootstrap/scss/bootstrap.scss"
